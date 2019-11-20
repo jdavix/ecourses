@@ -1,85 +1,83 @@
 import React from 'react'
 import Head from 'next/head'
-import Nav from '../components/nav'
+import Courses from '../components/courses';
 
 const Home = () => (
   <div>
     <Head>
       <title>Home</title>
       <link rel="icon" href="/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
     </Head>
+    <div className="container">
+      <div className="main-head">
+        <ul className="menu">
+          <li className="menu-item"><a href="">Courses</a></li>
+          <li className="menu-item"><a href="">Categories</a></li>
+        </ul>
+      </div>
+      <div className="content">
+        <div className="content-head">
+          <h1>Courses</h1>
 
-    <Nav />
-
-    <div className="hero">
-      <h1 className="title">Welcome to Next.js!</h1>
-      <p className="description">
-        To get started, edit <code>pages/index.js</code> and save to reload.
-      </p>
-
-      <div className="row">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Learn more about Next.js in the documentation.</p>
-        </a>
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Next.js Learn &rarr;</h3>
-          <p>Learn about Next.js by following an interactive tutorial!</p>
-        </a>
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Find other example boilerplates on the Next.js GitHub.</p>
-        </a>
+          <button className="pure-button pure-button-primary">
+              <i className="fa fa-cog"></i>
+              NEW COURSE
+          </button>
+        </div>
+        <div className="content-main">
+          <Courses />
+        </div>
       </div>
     </div>
-
     <style jsx>{`
-      .hero {
-        width: 100%;
-        color: #333;
-      }
-      .title {
-        margin: 0;
-        width: 100%;
-        padding-top: 80px;
-        line-height: 1.15;
-        font-size: 48px;
-      }
-      .title,
-      .description {
-        text-align: center;
-      }
-      .row {
-        max-width: 880px;
-        margin: 80px auto 40px;
+      .container {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
       }
-      .card {
-        padding: 18px 18px 24px;
-        width: 220px;
-        text-align: left;
+      .main-head {
+        width: 100%;
+        height: 80px;
+        background-color: rgb(61, 79, 93);
+        display: flex;
+        align-items: center;
+      }
+      .menu {
+        display: flex;
+        list-style: none;
+      }
+      .menu .menu-item {
+        width: 5vw;
+      }
+      .menu > .menu-item > a, .menu > .menu-item {
+        color: #FFFFFF;
         text-decoration: none;
-        color: #434343;
-        border: 1px solid #9b9b9b;
       }
-      .card:hover {
-        border-color: #067df7;
+      .menu > .menu-item {
+        padding: 25px;
       }
-      .card h3 {
-        margin: 0;
-        color: #067df7;
-        font-size: 18px;
+      .menu {
+        display: flex;
       }
-      .card p {
-        margin: 0;
-        padding: 12px 0 0;
-        font-size: 13px;
-        color: #333;
+      .content {
+        width: 90%;
+        padding: 1vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .content-head {
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+      }
+      .content-head h1 {
+         width: 10vw;
+         font-size: 8vw;
+      }
+      .content-main {
+        padding: 0.5vw;
+        padding-top: 3vw;
       }
     `}</style>
   </div>
