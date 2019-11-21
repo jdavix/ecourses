@@ -32,10 +32,6 @@ yarn run
 visit localhost:3000
 visit also localhost:3000/courses/new
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
 ## Built With
 
 * [Next js](https://nextjs.org/)
