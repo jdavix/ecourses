@@ -73,7 +73,7 @@ const Home = () => (
       }
       .content-head h1 {
          width: 10vw;
-         font-size: 8vw;
+         font-size: 2vw;
       }
       .content-main {
         padding: 0.5vw;

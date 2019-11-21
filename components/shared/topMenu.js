@@ -3,7 +3,6 @@ const TopMenu = ()=> {
     <div className="main-head">
       <ul className="menu">
         <li className="menu-item"><a href="">Courses</a></li>
-        <li className="menu-item"><a href="">Categories</a></li>
       </ul>
     <style jsx>{`
       .main-head {

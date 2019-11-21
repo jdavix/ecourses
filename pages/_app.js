@@ -9,8 +9,22 @@ config.autoAddCss = false // Tell Font Awesome to skip adding the CSS automatica
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
 import { faArrowsAlt } from "@fortawesome/free-solid-svg-icons";
+import { faEdit } from "@fortawesome/free-solid-svg-icons";
+import { faMusic } from "@fortawesome/free-solid-svg-icons";
+import { faFileCode } from "@fortawesome/free-solid-svg-icons";
+import { faFileVideo } from "@fortawesome/free-solid-svg-icons";
+import { faFileDownload } from "@fortawesome/free-solid-svg-icons";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
+
 library.add(faBook);
 library.add(faArrowsAlt);
+library.add(faEdit);
+library.add(faMusic);
+library.add(faFileCode);
+library.add(faFileVideo);
+library.add(faFileDownload);
+library.add(faEdit);
+library.add(faFilePdf);
 
 class MyApp extends App {
   render() {
